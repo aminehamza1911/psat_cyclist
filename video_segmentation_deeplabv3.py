@@ -48,6 +48,19 @@ with torch.no_grad():
         pred_label_imgs = pred_label_imgs.astype(np.uint8)
         pred_label_imgs = pred_label_imgs[0]
 
+        # Detect surface
+        line = pred_label_imgs[0]
+        bottom_middle = pred_label_imgs[int(0.7 * len(pred_label_imgs)):int(0.9 * len(pred_label_imgs)),
+                        int(0.4 * len(line)):int(0.6 * len(line))]
+        bottom_middle = bottom_middle.flatten()
+        c = np.bincount(bottom_middle)
+        if np.argmax(c) == 0:
+            print("On road")
+        elif np.argmax(c) == 0:
+            print("On road")
+        else:
+            print("Surface unknown")
+
         rgb = decode_segmap(pred_label_imgs, NB_CLASSES)
 
         print(f"Frame {framenb}")
