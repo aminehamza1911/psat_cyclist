@@ -36,3 +36,4 @@ python Weather.py idontknow.jpg
 ```
 Will add  the video functionality ( Can  only read jpg images )
 The directory ' Model' contains the different pre-trained Ml models
+U will need Keras - open cv
