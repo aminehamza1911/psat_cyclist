@@ -37,3 +37,5 @@ python Weather.py idontknow.jpg
 Will add  the video functionality ( Can  only read jpg images )
 The directory ' Model' contains the different pre-trained Ml models
 U will need Keras - open cv
+Lien : https://drive.google.com/file/d/1HFyAUvnkS61Xat9cUBAhG-4hvwR1T8lb/view
+https://github.com/berkgulay/WeatherPredictionFromImage
