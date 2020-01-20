@@ -28,3 +28,11 @@ Place video in *data* folder.
 `LEDNet`: Very fast semantic segmentation (problem: downsizes our already small videos too much)
 
 `Deeplabv3`: Fregu856 implementation trained on cityscapes: https://github.com/fregu856/deeplabv3too (problem: slow)
+
+### Weather 
+
+```shell script
+python Weather.py idontknow.jpg
+```
+Will add  the video functionality ( Can  only read jpg images )
+The directory ' Model' contains the different pre-trained Ml models
